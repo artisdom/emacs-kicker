@@ -372,3 +372,10 @@
 (load "desktop")
 (desktop-load-default)
 (desktop-read)
+
+; eshell
+(require ‘esh-mode)
+(setq eshell-save-history-on-exit t)
+(setq eshell-history-size 5120000)
+(setq eshell-hist-ignoredups t)
+(setq eshell-cmpl-cycle-completions nil)
